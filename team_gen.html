@@ -2,36 +2,48 @@
 <html>
 <head>
   <meta charset="utf-8">
+  <link rel="shortcut icon" type="image/png" href="favicon.png"/>
   <meta name="viewport" content="width=device-width">
-  <title>JS Bin</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Foosball Team Maker</title>
+  <script src="team_gen.js"></script>
 </head>
 <body>
-  <button onclick="generate_first()">Generate</button><button onclick="second_gen()">Generate 2nd</button><br />
-  <label>1 </label><input class="input_box" id="name_input1" type="text" /><br />
-  <label>2 </label><input class="input_box" id="name_input2" type="text" /><br />
-  <label>3 </label><input class="input_box" id="name_input3" type="text" /><br />
-  <label>4 </label><input class="input_box" id="name_input4" type="text" /><br />
-  <label>5 </label><input class="input_box" id="name_input5" type="text" /><br />
-  <label>6 </label><input class="input_box" id="name_input6" type="text" /><br />
-  <label>7 </label><input class="input_box" id="name_input7" type="text" /><br />
-  <label>8 </label><input class="input_box" id="name_input8" type="text" /><br />
-  <label>9 </label><input class="input_box" id="name_input9" type="text" /><br />
-  <label>10</label><input class="input_box" id="name_input10" type="text" /><br />
-  <label>11 </label><input class="input_box" id="name_input11" type="text" /><br />
-  <label>12 </label><input class="input_box" id="name_input12" type="text" /><br />
-  <label>13 </label><input class="input_box" id="name_input13" type="text" /><br />
-  <label>14 </label><input class="input_box" id="name_input14" type="text" /><br />
-  <label>15 </label><input class="input_box" id="name_input15" type="text" /><br />
-  <label>16 </label><input class="input_box" id="name_input16" type="text" /><br />
-  <label>17 </label><input class="input_box" id="name_input17" type="text" /><br />
-  <label>18 </label><input class="input_box" id="name_input18" type="text" /><br />
-  <label>19 </label><input class="input_box" id="name_input19" type="text" /><br />
-  <label>20 </label><input class="input_box" id="name_input20" type="text" /><br />
-  <h2>1st Round Teams</h2>
-  <div id="team_list_two">
+  <div class="button_container">
+    <button class="button" onclick="generate_first()">Generate</button><button class="button" onclick="second_gen()">Generate 2nd</button><br />
   </div>
-  <h2>2nd Round Teams</h2>
-  <div id="team_list_one">
+  <div class="input_container">
+    <label class="lab">1 </label><input class="input_box" id="name_input1" type="text" /><br />
+    <label class="lab">2 </label><input class="input_box" id="name_input2" type="text" /><br />
+    <label class="lab">3 </label><input class="input_box" id="name_input3" type="text" /><br />
+    <label class="lab">4 </label><input class="input_box" id="name_input4" type="text" /><br />
+    <label class="lab">5 </label><input class="input_box" id="name_input5" type="text" /><br />
+    <label class="lab">6 </label><input class="input_box" id="name_input6" type="text" /><br />
+    <label class="lab">7 </label><input class="input_box" id="name_input7" type="text" /><br />
+    <label class="lab">8 </label><input class="input_box" id="name_input8" type="text" /><br />
+    <label class="lab">9 </label><input class="input_box" id="name_input9" type="text" /><br />
+    <label class="lab">10</label><input class="input_box" id="name_input10" type="text" /><br />
+    <label class="lab">11 </label><input class="input_box" id="name_input11" type="text" /><br />
+    <label class="lab">12 </label><input class="input_box" id="name_input12" type="text" /><br />
+    <label class="lab">13 </label><input class="input_box" id="name_input13" type="text" /><br />
+    <label class="lab">14 </label><input class="input_box" id="name_input14" type="text" /><br />
+    <label class="lab">15 </label><input class="input_box" id="name_input15" type="text" /><br />
+    <label class="lab">16 </label><input class="input_box" id="name_input16" type="text" /><br />
+    <label class="lab">17 </label><input class="input_box" id="name_input17" type="text" /><br />
+    <label class="lab">18 </label><input class="input_box" id="name_input18" type="text" /><br />
+    <label class="lab">19 </label><input class="input_box" id="name_input19" type="text" /><br />
+    <label class="lab">20 </label><input class="input_box" id="name_input20" type="text" /><br />
+  </div>
+  <div class="button_container">
+      <button class="clear_button" onclick="clear_all()">Clear All</button>
+  </div>
+  <div class="lists">
+    <h2>1st Round Teams</h2>
+    <div id="team_list_two">
+    </div>
+    <h2>2nd Round Teams</h2>
+    <div id="team_list_one">
+    </div>
   </div>
 </body>
 </html>
